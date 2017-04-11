@@ -1,4 +1,6 @@
-package com.yunsheng;
+package com.yunsheng.demo;
+
+import org.apache.commons.lang.builder.ToStringBuilder;
 
 /**
  * Created by shengyun on 17/2/21.
@@ -16,8 +18,6 @@ public class DogHobby {
 
     @Override
     public String toString() {
-        return "DogHobby{" +
-                "what='" + what + '\'' +
-                '}';
+        return ToStringBuilder.reflectionToString(this);
     }
 }
