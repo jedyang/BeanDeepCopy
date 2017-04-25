@@ -25,9 +25,6 @@ import org.springframework.beans.FatalBeanException;
 public class DeepCopyUtils {
 
     /**
-     * 不支持基本类型
-     * 支持List
-     * 支持简单类型hashMap
      * <p>
      * 深层次复制。
      * 当目标子级元素和源自己元素都是自定义类型，并且类型不相同时，递归copy

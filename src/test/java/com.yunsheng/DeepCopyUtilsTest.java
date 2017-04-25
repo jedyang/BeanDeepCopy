@@ -10,6 +10,7 @@ import java.util.Set;
 import com.yunsheng.demo.Cat;
 import com.yunsheng.demo.CatHobby;
 import com.yunsheng.demo.Dog;
+import org.apache.commons.lang.SerializationUtils;
 import org.junit.Test;
 
 /**
@@ -19,6 +20,9 @@ public class DeepCopyUtilsTest {
 
     @Test
     public void test_copy(){
+        //Double a = 1.1d;
+        //Long b = a;
+        SerializationUtils.clone()
         Cat cat = new Cat();
         cat.setName("cat");
         cat.setLength(10L);
@@ -67,4 +71,5 @@ public class DeepCopyUtilsTest {
         dog.setName("dog");
         System.out.println(dog);
     }
+
 }
